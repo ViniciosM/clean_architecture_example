@@ -1,18 +1,18 @@
-import 'package:clean_architecture_flutter/app_module.dart';
-import 'package:clean_architecture_flutter/app_widget.dart';
+import 'package:clean_architecture_flutter/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return ModularApp(
-      module: AppModule(),
-      child: AppWidget(),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
