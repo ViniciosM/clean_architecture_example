@@ -1,5 +1,5 @@
-import 'package:clean_architecture_flutter/domain/entities/quote_entity.dart';
+import 'package:clean_architecture_example/domain/entities/quote_entity.dart';
 
-abstract class GetRandomQuote {
+abstract class GetRandomQuoteUseCase {
   Future<QuoteEntity> call();
 }

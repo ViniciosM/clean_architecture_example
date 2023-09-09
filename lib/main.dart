@@ -1,4 +1,4 @@
-import 'package:clean_architecture_flutter/presentation/pages/home_page.dart';
+import 'package:clean_architecture_example/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

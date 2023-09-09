@@ -1,12 +1,11 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:clean_architecture_flutter/domain/entities/quote_entity.dart';
-import 'package:clean_architecture_flutter/domain/repositories/quote_repository.dart';
-import 'package:clean_architecture_flutter/domain/usecases/get_random_quote.dart';
+import 'package:clean_architecture_example/domain/entities/quote_entity.dart';
+import 'package:clean_architecture_example/domain/repositories/quote_repository.dart';
+import 'package:clean_architecture_example/domain/usecases/get_random_quote.dart';
 
-class GetRandomQuoteImpl implements GetRandomQuote {
+class GetRandomQuoteUseCaseImpl implements GetRandomQuoteUseCase {
   QuoteRepository quoteRepository;
 
-  GetRandomQuoteImpl({
+  GetRandomQuoteUseCaseImpl({
     required this.quoteRepository,
   });
 

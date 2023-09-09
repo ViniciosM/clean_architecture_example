@@ -1,4 +1,4 @@
-import 'package:clean_architecture_flutter/domain/entities/quote_entity.dart';
+import 'package:clean_architecture_example/domain/entities/quote_entity.dart';
 
 class QuoteDto extends QuoteEntity {
   QuoteDto({required int id, required String quote, required String author})
@@ -12,6 +12,10 @@ class QuoteDto extends QuoteEntity {
   //     required this.quote,
   //     required this.author,
   // });
+
+  static QuoteDto fromEntity(QuoteEntity entity) {
+    return QuoteDto(id: entity.id, quote: entity.quote, author: entity.author);
+  }
 
   QuoteDto copyWith({
     int? id,
