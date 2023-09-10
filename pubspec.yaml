@@ -12,12 +12,13 @@ dependencies:
 
   # general
   equatable: ^2.0.5
+  google_fonts: ^5.1.0
 
   # dependency injection
   get_it: ^7.6.4
 
   # requests
-  http: 1.1.0
+  http: ^1.1.0
 
   # state management
   flutter_bloc: ^8.1.3

@@ -1,7 +1,10 @@
-import 'package:clean_architecture_example/presentation/pages/home_page.dart';
+import 'package:clean_architecture_example/main_di.dart';
+import 'package:clean_architecture_example/presentation/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  setupDependencyInjection();
   runApp(const MyApp());
 }
 

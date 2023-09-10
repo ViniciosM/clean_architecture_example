@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
 
-abstract class HomeEvent extends Equatable {
+sealed class HomeEvent extends Equatable {
   const HomeEvent();
 }
 

@@ -3,9 +3,9 @@ import 'dart:developer';
 import 'package:bloc/bloc.dart';
 import 'package:clean_architecture_example/data/dtos/quote_dto.dart';
 import 'package:clean_architecture_example/domain/usecases/get_random_quote.dart';
+import 'package:clean_architecture_example/main_di.dart';
 import 'package:clean_architecture_example/presentation/pages/home/controller/home_event.dart';
 import 'package:clean_architecture_example/presentation/pages/home/controller/home_state.dart';
-import 'package:clean_architecture_example/presentation/pages/home/home_di.dart';
 
 class HomeBloc extends Bloc<HomeEvent, HomeState> {
   HomeBloc() : super(const HomeState(status: HomeStatus.initial)) {

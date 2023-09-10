@@ -11,7 +11,7 @@ class QuoteDatasourceImpl implements QuoteDatasource {
         await http.get(Uri.parse('https://dummyjson.com/quotes/random'));
 
     if (response.statusCode == 200) {
-      final quote = jsonDecode(response.body)['quote'];
+      final quote = jsonDecode(response.body);
 
       return QuoteDto.fromJson(quote);
     } else {
